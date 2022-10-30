@@ -1,0 +1,10 @@
+<app-navbar></app-navbar>
+<!--Search bar here-->
+
+<app-searchbar></app-searchbar>
+<div class="cardwrapper">
+  <div *ngFor="let card of GiftCardsList" style="width:25% ;">
+    <app-card-component [data]="card"></app-card-component>
+  </div>
+</div>
+<footer class="bg-dark text-white footer">Created By Abdel Moneem Saadaoui - MIT License</footer>
